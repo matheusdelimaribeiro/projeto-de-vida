@@ -1,15 +1,79 @@
-@import url('https://fontes.gooleapis.com/css2?family=chakra+petch:wght@400;700
+@import url('https://fonts.googleapis.com/css2?familly=chacka+Petch:wght@');
 
 :root{
-    --cor-de-fundo: #E1E1E1;
+    --cor-de-fundo: #1E1E1E;
     --verde: #6FFF57;
     --branco: #FFFFFF;
     --botao-ativo: #3A375E;
     --botao-inativo: rgba(58, 55, 94, 0.5);
-    --texto-fundo: rgba(58, 55, 94,0.3);
+    --texto-fundo: rgba(58, 55, 94, 0.3);
 }
 
 body{
     background-color: var(--cor-de-fundo);
     color: var(--branco);
-    font-family: 'chakra petch', sans-serif;
+    font-family: 'chakra peth', sans-serif;
+}
+  
+
+.conteudo-principal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;screen
+}
+
+.titulo-principal{
+    text-align: left;
+    width: 100%;
+    font-size: 32px;
+}
+
+.titulo-principal span{
+    color: var(--verde);
+}
+
+.botao{
+    font-family: "crakra Petch", sans-serif;
+    background-color: var(--botao-inativo);
+    color: var(--branco);
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+    font-size: 18px;
+    align-items: center;
+    width: 100%;
+    border-bottom: 4px solid var(--botao-ativo);
+    border-left: 4px solid var(--botao-ativo);
+    border-right: 4px solid var(--botao-ativo);
+    border-top: none;
+}
+
+.botao:first-child{
+    border-radius: 40px 40px 0 0;
+}
+
+.botoens{
+    display: block;
+}
+
+.ativo{
+    background-color: var(--botao-ativo);
+    border-bottom: 4px solid var(--verde);
+}
+
+@media screen and (min-with: 768px) {
+    .botoes{
+        display: flex;
+    }
+    .botao:first-child{
+        border-radius: 40px 0 0 0;
+    }
+    .botao:first-child{
+        border-radius: 0 40px 0 0;
+    } 
+}
+
